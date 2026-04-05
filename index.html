@@ -412,15 +412,14 @@ nav.scrolled{
   color:var(--text);
   white-space:nowrap;
 }
-.tech-badge-pill.red {
-    background: rgba(230, 57, 70, 0.15);
-    color: #ff6b6b;
-    border: 1px solid rgba(230, 57, 70, 0.4);
+.tech-badge-pill.red{
+  background:rgba(230,57,70,.15);
+  color:#ff6b6b;
+  border:1px solid rgba(230,57,70,.4);
 }
 .badge1{top:10%;right:-40px;border-color:rgba(162,89,255,.3)}
 .badge2{bottom:20%;left:-50px;border-color:rgba(0,245,212,.3)}
 .badge3{top:55%;right:-55px;border-color:rgba(79,142,255,.3)}
-
 
 /* ===== ABOUT ===== */
 #about{background:linear-gradient(180deg,transparent,rgba(162,89,255,.04),transparent)}
@@ -540,6 +539,7 @@ nav.scrolled{
 }
 .tech-badge-pill.blue{background:rgba(79,142,255,.1);border-color:rgba(79,142,255,.2);color:var(--blue)}
 .tech-badge-pill.neon{background:rgba(0,245,212,.08);border-color:rgba(0,245,212,.2);color:var(--neon)}
+.tech-badge-pill.red{background:rgba(230,57,70,.15);border-color:rgba(230,57,70,.4);color:#ff6b6b}
 .github-btn{
   display:inline-flex;align-items:center;gap:.45rem;
   padding:.6rem 1.2rem;
@@ -617,38 +617,6 @@ nav.scrolled{
   font-weight:500;
 }
 
-/* ===== SKILLS — icon grid ===== */
-.skills-categories{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem}
-.skill-category{
-  background:var(--card-bg);border:1px solid var(--border);
-  border-radius:14px;padding:1.5rem;
-  backdrop-filter:blur(16px);transition:border-color .3s;
-}
-.skill-category:hover{border-color:rgba(162,89,255,.3)}
-.cat-header{display:flex;align-items:center;gap:.7rem;margin-bottom:1.3rem}
-.cat-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.95rem}
-.cat-android{background:linear-gradient(135deg,#3ddc84,#00c853);color:#000}
-.cat-prog{background:linear-gradient(135deg,var(--blue),#764ba2);color:#fff}
-.cat-tools{background:linear-gradient(135deg,var(--neon),#00b4d8);color:#000}
-.cat-web{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff}
-.cat-name{font-family:'Poppins',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.02em}
-.icon-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(76px,1fr));gap:.7rem}
-.skill-icon-card{
-  display:flex;flex-direction:column;align-items:center;gap:.45rem;
-  padding:.75rem .4rem;
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:10px;
-  transition:transform .25s,border-color .25s,box-shadow .25s;cursor:default;
-}
-.skill-icon-card:hover{
-  transform:translateY(-4px) scale(1.05);
-  border-color:var(--purple);
-  box-shadow:0 6px 24px rgba(162,89,255,.2);
-  background:rgba(162,89,255,.08);
-}
-.skill-icon-card i{font-size:1.75rem;line-height:1}
-.skill-icon-card .sk-label{font-size:.65rem;font-family:'DM Mono',monospace;color:var(--muted);text-align:center;letter-spacing:.04em}
-
 /* ===== EXPERIENCE ===== */
 #experience{background:linear-gradient(180deg,transparent,rgba(79,142,255,.04),transparent)}
 .exp-timeline{position:relative;padding-left:2rem;margin-top:3rem}
@@ -701,7 +669,39 @@ nav.scrolled{
   font-size:.7rem;font-family:'DM Mono',monospace;color:var(--blue);
 }
 
-/* ===== CERTIFICATES — image gallery ===== */
+/* ===== SKILLS ===== */
+.skills-categories{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem}
+.skill-category{
+  background:var(--card-bg);border:1px solid var(--border);
+  border-radius:14px;padding:1.5rem;
+  backdrop-filter:blur(16px);transition:border-color .3s;
+}
+.skill-category:hover{border-color:rgba(162,89,255,.3)}
+.cat-header{display:flex;align-items:center;gap:.7rem;margin-bottom:1.3rem}
+.cat-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.cat-android{background:linear-gradient(135deg,#3ddc84,#00c853);color:#000}
+.cat-prog{background:linear-gradient(135deg,var(--blue),#764ba2);color:#fff}
+.cat-tools{background:linear-gradient(135deg,var(--neon),#00b4d8);color:#000}
+.cat-web{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff}
+.cat-name{font-family:'Poppins',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.02em}
+.icon-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(76px,1fr));gap:.7rem}
+.skill-icon-card{
+  display:flex;flex-direction:column;align-items:center;gap:.45rem;
+  padding:.75rem .4rem;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:10px;
+  transition:transform .25s,border-color .25s,box-shadow .25s;cursor:default;
+}
+.skill-icon-card:hover{
+  transform:translateY(-4px) scale(1.05);
+  border-color:var(--purple);
+  box-shadow:0 6px 24px rgba(162,89,255,.2);
+  background:rgba(162,89,255,.08);
+}
+.skill-icon-card i{font-size:1.75rem;line-height:1}
+.skill-icon-card .sk-label{font-size:.65rem;font-family:'DM Mono',monospace;color:var(--muted);text-align:center;letter-spacing:.04em}
+
+/* ===== CERTIFICATES ===== */
 #certificates{background:linear-gradient(180deg,transparent,rgba(0,245,212,.02),transparent)}
 .certs-gallery{
   display:grid;grid-template-columns:repeat(4,1fr);
@@ -755,7 +755,7 @@ nav.scrolled{
 .comm-title{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:700;margin-bottom:.25rem;letter-spacing:.01em}
 .comm-sub{font-size:.75rem;color:var(--muted)}
 
-/* ===== CONTACT — centered, no form ===== */
+/* ===== CONTACT ===== */
 #contact{background:linear-gradient(180deg,transparent,rgba(162,89,255,.04))}
 .contact-centered{max-width:640px;margin:3rem auto 0;display:flex;flex-direction:column;align-items:center;gap:1.4rem}
 .contact-items-row{display:flex;flex-direction:column;gap:1rem;width:100%}
@@ -829,7 +829,6 @@ footer span{color:var(--purple)}
 
 /* ===== SCROLL INDICATOR ===== */
 .scroll-indicator{
-  position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
   display:flex;flex-direction:column;align-items:center;gap:.4rem;
   font-family:'DM Mono',monospace;
   font-size:.65rem;
@@ -837,6 +836,11 @@ footer span{color:var(--purple)}
   letter-spacing:.15em;
   text-transform:uppercase;
   animation:fadeIn .5s ease 1.5s both;
+  /* Desktop: absolute centered at bottom of hero */
+  position:absolute;
+  bottom:2rem;
+  left:50%;
+  transform:translateX(-50%);
 }
 .scroll-line{
   width:1.5px;
@@ -851,9 +855,10 @@ footer span{color:var(--purple)}
   100%{transform:scaleY(0);transform-origin:bottom}
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE — 1024px ===== */
 @media(max-width:1024px){
   .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero-eyebrow{justify-content:center}
   .hero-visual{margin-top:3rem}
   .hero-btns,.hero-stats{justify-content:center}
   .hero-stats{flex-wrap:wrap}
@@ -862,21 +867,96 @@ footer span{color:var(--purple)}
   .community-grid{grid-template-columns:repeat(2,1fr)}
   .skills-categories{grid-template-columns:1fr}
   .about-grid{grid-template-columns:1fr}
+  /* Scroll indicator: leave absolute but centred under stacked grid */
+  .scroll-indicator{position:relative;bottom:auto;left:auto;transform:none;margin-top:2rem}
 }
+
+/* ===== RESPONSIVE — 768px (mobile) ===== */
 @media(max-width:768px){
   .nav-links{display:none}
   .hamburger{display:flex}
-  .hero-grid{grid-template-columns:1fr}
+  section{padding:4rem 0}
+
+  /* Hero */
+  #hero{
+    min-height:auto;
+    padding-top:90px;
+    padding-bottom:4rem;
+    overflow:visible; /* let orbit rings breathe */
+  }
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:2rem;
+    text-align:center;
+  }
+  .hero-eyebrow{justify-content:center}
+  .hero-name{font-size:clamp(2rem,10vw,3rem)}
+  .hero-title{font-size:.85rem}
+  .typing-wrap{font-size:.88rem}
+  .hero-btns{
+    flex-direction:column;
+    align-items:center;
+    gap:.75rem;
+  }
+  .hero-btns .btn{
+    width:100%;
+    max-width:280px;
+    justify-content:center;
+  }
+  .hero-stats{justify-content:center;flex-wrap:wrap;gap:1.2rem;margin-top:1.5rem}
+  .stat-num{font-size:1.3rem}
+
+  /* Phone mockup — visible but scaled down */
+  .hero-visual{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* Scale the whole visual container down */
+    width:100%;
+    transform:scale(0.68);
+    transform-origin:top center;
+    /* Negative margin to reclaim whitespace from CSS scale */
+    margin-bottom:-90px;
+  }
+  /* Shrink orbits so they don't overflow sideways */
+  .orbit1{width:240px;height:240px}
+  .orbit2{width:310px;height:310px}
+  .phone-mockup{width:170px}
+  .phone-screen{min-height:260px}
+  /* Floating labels still overflow at this scale — hide them */
+  .badge1,.badge2,.badge3{display:none}
+
+  /* Scroll indicator — flow naturally after hero content */
+  .scroll-indicator{
+    position:relative;
+    bottom:auto;left:auto;
+    transform:none;
+    margin-top:1rem;
+    /* re-centre in normal flow */
+    align-self:center;
+  }
+
+  /* Other sections */
   .projects-grid{grid-template-columns:1fr}
   .contact-centered{max-width:100%}
   .certs-gallery{grid-template-columns:repeat(2,1fr)}
   .community-grid{grid-template-columns:1fr}
-  section{padding:4rem 0}
-  .hero-visual{display:none}
-  .badge1,.badge2,.badge3{display:none}
+  .about-grid{grid-template-columns:1fr}
+  .skills-categories{grid-template-columns:1fr}
+
+  /* Experience */
+  .exp-header{flex-direction:column;gap:.5rem}
+  .exp-period{align-self:flex-start}
 }
-@media(max-width:480px){
+
+@media(max-width:1000px){
   .certs-gallery{grid-template-columns:1fr}
+  .hero-visual{
+    transform:scale(0.58);
+    margin-bottom:-110px;
+  }
+  .stat-num{font-size:1.2rem}
+  .hero-stats{gap:1rem}
 }
 </style>
 </head>
@@ -1049,8 +1129,7 @@ footer span{color:var(--purple)}
       <div class="project-card reveal" style="transition-delay:.1s">
         <div class="project-num">01 / PROJECT</div>
         <div class="project-title">StudyNest</div>
-        <div class="project-desc">StudyNest is an Android application built using Kotlin and Jetpack Compose that helps students access all their academic study materials in one place.
-The app provides subject-wise organization of syllabus, notes, assignments, previous year papers, and videos with Firebase-based authentication and a clean UI.</div>
+        <div class="project-desc">StudyNest is an Android application built using Kotlin and Jetpack Compose that helps students access all their academic study materials in one place. The app provides subject-wise organization of syllabus, notes, assignments, previous year papers, and videos with Firebase-based authentication and a clean UI.</div>
         <div class="tech-badges">
           <span class="tech-badge-pill">Kotlin</span>
           <span class="tech-badge-pill blue">Jetpack Compose</span>
@@ -1178,7 +1257,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
           </div>
           <div class="exp-company">BAGIA'S Frozen Foods</div>
           <ul class="exp-points">
-            <li>Working with my family on our startup, BAGIA’S Frozen Foods, based in Surat.</li>
+            <li>Working with my family on our startup, BAGIA'S Frozen Foods, based in Surat.</li>
             <li>Designing and developing the official business website using HTML, CSS, and Bootstrap</li>
             <li>Deploying and managing the website, including updates and maintenance</li>
             <li>Creating daily advertisement flyers and promotional creatives</li>
@@ -1317,7 +1396,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.05s">
         <div class="cert-img-wrap">
-          <img src="Codathon.jpeg" alt="Codathon Certificate" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="Codathon.jpeg" alt="Codathon Certificate"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">Codathon 2025 Winner</div>
@@ -1327,7 +1406,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.1s">
         <div class="cert-img-wrap">
-          <img src="AI for Beginners - HP.jpeg" alt="AI for Beginners Certificate" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="AI for Beginners - HP.jpeg" alt="AI for Beginners Certificate"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">AI for Beginners</div>
@@ -1337,7 +1416,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.15s">
         <div class="cert-img-wrap">
-          <img src="Postman API.jpeg" alt="Postman API Certificate" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="Postman API.jpeg" alt="Postman API Certificate"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">Postman API Expert</div>
@@ -1347,7 +1426,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.2s">
         <div class="cert-img-wrap">
-          <img src="Spoken Tutorial - HTML.jpeg" alt="HTML Certification" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="Spoken Tutorial - HTML.jpeg" alt="HTML Certification"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">HTML Certification</div>
@@ -1357,7 +1436,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.25s">
         <div class="cert-img-wrap">
-          <img src="SSASIT Hackathon.jpeg" alt="SSASIT Hackathon" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="SSASIT Hackathon.jpeg" alt="SSASIT Hackathon"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">SSASIT Hackathon</div>
@@ -1367,7 +1446,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.3s">
         <div class="cert-img-wrap">
-          <img src="GSSIETW Hackathon.jpeg" alt="GSSIETW Hackathon" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="GSSIETW Hackathon.jpeg" alt="GSSIETW Hackathon"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">GSSIETW Hackathon</div>
@@ -1377,7 +1456,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.35s">
         <div class="cert-img-wrap">
-          <img src="Debugging Challenge.jpeg" alt="Debugging Challenge" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="Debugging Challenge.jpeg" alt="Debugging Challenge"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">Debugging Challenge</div>
@@ -1387,7 +1466,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.4s">
         <div class="cert-img-wrap">
-          <img src="Quiz2Code.jpeg" alt="Quiz2Code" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="Quiz2Code.jpeg" alt="Quiz2Code"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">Quiz2Code</div>
@@ -1397,7 +1476,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
 
       <div class="cert-img-card reveal" style="transition-delay:.45s">
         <div class="cert-img-wrap">
-          <img src="Technical Quiz.jpeg" alt="Technical Quiz" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+          <img src="Technical Quiz.jpeg" alt="Technical Quiz"/>
         </div>
         <div class="cert-img-info">
           <div class="cert-img-name">Technical Quiz</div>
@@ -1495,7 +1574,7 @@ The app provides subject-wise organization of syllabus, notes, assignments, prev
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ===== LOADER ===== */
 window.addEventListener('load',()=>{
   setTimeout(()=>{
@@ -1518,6 +1597,7 @@ function animRing(){
   requestAnimationFrame(animRing);
 }
 animRing();
+
 /* ===== CURSOR HOVER TARGETS ===== */
 document.querySelectorAll('a,button,.btn,.project-card,.cert-img-card,.community-card,.skill-icon-card').forEach(el=>{
   el.addEventListener('mouseenter',()=>{ring.style.opacity='.4'});
